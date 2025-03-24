@@ -470,3 +470,43 @@ footer .ft-bottom {
 	padding-top: 20px;
 	color: #999;
 }
+
+/*Bilgi sAYFASI*/
+.contact-page {
+	margin-top: 5vh; /* Sayfanın üstünden boşluk */
+	display: flex;
+	flex-direction: column;
+	gap: 7vh; /* Tüm öğeler arası mesafe eşit olsun diye buraya boşluk verdik */
+	align-items: center;
+}
+
+.contact-container {
+	display: flex;
+	flex-direction: row;
+	gap: 2.5rem;
+	justify-content: center;
+	align-items: center;
+}
+
+.line-divider {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.5rem;
+	color: #fecd2d;
+	margin: 5vh 0; /* Üstten ve alttan eşit boşluk */
+}
+
+.line-divider-center {
+	font-size: 2.5rem;
+	color: #fecd2d;
+}
+
+.iletişim-bilgileri li {
+	margin-top: 0.75rem;
+}
+
+.iletişim-bilgileri strong {
+	font-weight: bold !important;
+	color: #222;
+}
