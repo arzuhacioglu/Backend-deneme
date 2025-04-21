@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1 user-scalable=no"><!--Sayfanın mobil uyumluluğunu ayarlar,sayfa sabit büyütme-küçültme yok-->
+        <meta name="mobile-web-app-capable" content="yes"><!--Tarayıcıda çalışma izni verir-->
+        <meta name="HandheldFriendly" content="True"><!--Eski mobil cihazların tarayıcılarına uyum sağlama-->
+
+        <link rel="shortcut icon" href="resimler/favicon.png">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        <link rel="stylesheet" href="css/materialize.min.css">
+        <link rel="stylesheet" href="css/slick.css">
+        <link rel="stylesheet" href="css/slick-theme.css">
+        <link rel="stylesheet" href="css/owl.carousel.css">
+        <link rel="stylesheet" href="css/owl.theme.css">
+        <link rel="stylesheet" href="css/owl.transitions.css">
+        
+        <!-- jQuery (Materialize için gerekli) -->
+        <script src="js/jquery.min.js"></script>
+
+        <!-- Materialize JavaScript -->
+        <script src="js/materialize.min.js"></script>
+
+        <!-- Custom JS Dosyan -->
+        <script src="js/custom.js"></script>
+        <script src="js/slick.min.js"></script>
+        
+        <link rel="stylesheet" href="css/yonetici.css">  <!-- Yöneticinin sayfasına özel stil -->
+
+        <title>Giriş Sayfası</title>
+</head>
+<body>
+     <!-- navbar -->
+     <div class="navbar">
+        <div class="container">
+            <div class="left-panel">
+                <a href="#" data-activates="slide-out-left" class="sidenav-control-left">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </div>
+            
+            <div class="cafe-name">
+                <a href="homePage.html" class="logo"><h1>Has Cafe & Restaurant</h1></a><!--kendine bağlantı atmamızın sebebi kullanıcı sayfanın aşağısında olsa bile isme tıkladığında sayfa yenilenir-->
+            </div>
+        </div>   
+     </div>
+    <!-- end navbar -->
+
+    <!--Sol panel-->
+    <div class="left-panel">
+        <ul id="slide-out-left" class="side-nav collapsible"  data-collapsible="accordion"><!--Materialize CSS frameworku kullanarak yan menü oluşturmaya yarayan link-->
+            <li>
+                <a href="homepage.html"><i class="fa fa-home"></i>Ana Sayfa</a><!--Yan menünün ilk ögesi,anasayfaya dönüş sağlar-->
+            </li>
+            <li>
+                <a href="shopping-cart.html"><i class="fa fa-shopping-cart"></i>Alışveriş Sepeti</a>
+            </li>
+            <li>
+                <a href="contact.html"><i class="fa fa-envelope"></i>İletişim Bilgilerimiz</a>
+            </li>
+            <li>
+                <a href="admin.html"><i class="fa fa-user-shield"></i>Yönetici Girişi</a>
+            </li>
+        </ul>
+    </div>
+    <!-- End sol panel-->
+    <div class="login-container">
+        <h2>Giriş Yap</h2>
+        <form id="loginForm">
+            <div class="input-group">
+                <label for="username">Kullanıcı Adı:</label>
+                <input type="text" id="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Şifre:</label>
+                <input type="password" id="password" required>
+            </div>
+            <button type="submit">Giriş Yap</button>
+        </form>
+    </div>
+    
+    <script src="js/yonetici.js"></script>
+    
+    
+</body>
+</html>
